@@ -96,3 +96,40 @@ class estudiante {
         return nombre+","+apellido+","+apellido+","+cuenta;
     }
 }
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+OrdenRadix
+
+public class OrdenRadix {
+
+   
+    public static void main(String[] args)throws IOException{
+        Scanner entrada = new Scanner(System.in); 
+        entrada.useDelimiter("\n");
+        OrdenRadix adix = new OrdenRadix();
+        Radix sort = new Radix();
+        boolean salir = false; 
+        int opcion;
+        
+        while(!salir) { 
+            System.out.println("---- Menú: ----");
+            System.out.println(" 1. Ordenamiento radix");
+            System.out.println(" 2. Salir");
+            System.out.println("Elije uno:");
+            opcion = entrada.nextInt();
+	
+            switch(opcion) {
+		case 1:
+                    //Radix.sort();
+                    break;
+		case 2:
+                    salir = true;
+                    break;
+            }
+            System.out.println("\n\n");
+	} 
+    }
+    
+}
